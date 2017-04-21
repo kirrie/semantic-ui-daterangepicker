@@ -9,7 +9,7 @@
 (function (root, factory) {
 
     if(typeof define === 'function' && define.amd) {
-        define(['moment', 'jquery', 'exports'], function (momentjs, $, exports) {
+        define(['/bower_components/moment/min/moment.min.js', 'exports'], function (momentjs, exports) {
             root.daterangepicker = factory(root, exports, momentjs, $);
         });
 
