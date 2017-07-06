@@ -9,7 +9,7 @@
 (function (root, factory) {
 
     if(typeof define === 'function' && define.amd) {
-        define(['momentWithLocales', 'exports'], function (momentjs, exports) {
+        define(['moment-with-locales', 'exports'], function (momentjs, exports) {
             root.daterangepicker = factory(root, exports, momentjs, $);
         });
 
